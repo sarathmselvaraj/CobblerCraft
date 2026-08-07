@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Services | CobblerCraft — Shoe Repair &amp; Cobbler Template</title>
+<meta content="Sole replacement, heel repair, stitching, restoration, waxing, creaming and leather care — full cobbler service list and pricing." name="description"/>
+<link href="./services.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Services | CobblerCraft" property="og:title"/>
+<meta content="Sole replacement, heel repair, stitching, restoration, waxing, creaming and leather care — full cobbler service list and pricing." property="og:description"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class'}</script>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<script src="assets/js/main.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"CobblerCraft","description":"Sole replacement, heel repair, stitching, restoration, waxing, creaming and leather care — full cobbler service list and pricing.","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"14 Tannery Lane","addressLocality":"Brooklyn","addressRegion":"NY","postalCode":"11222"},"telephone":"+1-555-0142"}
+</script>
+</head>
+<body class="antialiased">
+<header class="sticky top-0 z-50 border-b line backdrop-blur" style="background:color-mix(in oklab,var(--cc-bg) 85%,transparent)">
+<div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3.5">
+<a class="flex items-center gap-2.5" href="index.html">
+<span class="grid h-10 w-10 place-items-center rounded-xl bg-brand text-white"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M7 4v7l-2 4v5h6v-4l3-3V4z"></path><path d="M11 20h8v-3h-8"></path></svg></span>
+<span class="display text-xl font-bold">CobblerCraft</span>
+</a>
+<nav aria-label="Primary" class="hidden items-center gap-4 lg:flex xl:gap-5"><details class="nav-home-dropdown relative"><summary class="link-underline text-sm font-medium cursor-pointer list-none">Home <span class="nav-caret">▾</span></summary><div class="nav-home-menu absolute start-0 mt-3 w-64 rounded-xl surface p-2 shadow-xl"><a class="block rounded-lg px-3 py-2.5 text-sm hover:bg-black/5 dark:hover:bg-white/5" href="index.html">Home 1 – General Services</a><a class="block rounded-lg px-3 py-2.5 text-sm hover:bg-black/5 dark:hover:bg-white/5" href="home-2.html">Home 2 – Cobbler Niche</a></div></details><a class="link-underline text-sm font-medium" href="about.html">About</a><a class="link-underline text-sm font-medium brand" href="services.html">Services</a><a class="link-underline text-sm font-medium" href="pricing.html">Pricing</a><a class="link-underline text-sm font-medium" href="blog.html">Blog</a><a class="link-underline text-sm font-medium" href="contact.html">Contact</a></nav>
+<div class="flex items-center gap-2">
+<button aria-label="Toggle dark mode" class="btn btn-ghost !px-3 !py-2" onclick="ccToggleTheme()"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 019.5 4a8.5 8.5 0 1010.5 10.5z"></path></svg></button>
+<button aria-label="Toggle RTL" class="btn btn-ghost !px-3 !py-2 text-xs font-bold" onclick="ccToggleDir()">RTL</button>
+<a class="btn btn-ghost hidden 2xl:inline-flex !px-4 !py-2.5" href="services.html#services-list">Book Repair</a>
+<div class="auth-desktop-guest items-center gap-2" data-auth-guest="">
+<a class="auth-signin-link" href="login.html">Sign In</a>
+<a class="btn btn-primary !px-4 !py-2.5" href="register.html">Create Account</a>
+</div>
+<details class="auth-profile relative" data-auth-user="" hidden="">
+<summary class="auth-profile-summary"><span class="auth-avatar" data-auth-initial="">U</span><span class="hidden max-w-28 truncate text-sm font-semibold 2xl:inline" data-auth-name="">User</span><span aria-hidden="true" class="text-xs muted">▾</span></summary>
+<div class="auth-profile-menu surface"><div class="border-b line px-4 py-3"><p class="text-sm font-bold" data-auth-fullname="">User</p><p class="muted mt-0.5 max-w-56 truncate text-xs" data-auth-email=""></p></div><div class="px-2 py-2"><div class="rounded-lg px-3 py-2"><p class="text-xs font-semibold uppercase tracking-wider brand">Profile</p><p class="muted mt-1 text-xs">Your account is active on this browser.</p></div><a class="cc-profile-link" href="profile.html">View profile &amp; bookings</a><button class="auth-logout-btn" data-auth-logout="" type="button">Log out</button></div></div>
+</details>
+<button aria-label="Open menu" class="btn btn-ghost !px-3 !py-2 lg:hidden" data-mobile-toggle=""><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
+</div>
+<div class="hidden border-t line px-5 py-3 lg:hidden" data-mobile-menu=""><details class="mobile-home-dropdown rounded-lg"><summary class="flex cursor-pointer items-center justify-between rounded-lg px-3 py-2 text-sm font-medium list-none">Home <span>▾</span></summary><div class="ms-3 border-s line ps-2 pb-2"><a class="block rounded-lg px-3 py-2 text-sm muted hover:brand" href="index.html">Home 1 – General Services</a><a class="block rounded-lg px-3 py-2 text-sm muted hover:brand" href="home-2.html">Home 2 – Cobbler Niche</a></div></details><a class="block rounded-lg px-3 py-2 text-sm" href="about.html">About</a><a class="block rounded-lg px-3 py-2 text-sm brand" href="services.html">Services</a><a class="block rounded-lg px-3 py-2 text-sm" href="pricing.html">Pricing</a><a class="block rounded-lg px-3 py-2 text-sm" href="blog.html">Blog</a><a class="block rounded-lg px-3 py-2 text-sm" href="contact.html">Contact</a><div class="mt-3 grid grid-cols-2 gap-2 border-t line pt-3" data-auth-guest=""><a class="btn btn-ghost justify-center !py-2.5" href="login.html">Sign In</a><a class="btn btn-primary justify-center !py-2.5" href="register.html">Create Account</a></div><div class="mt-3 rounded-xl border line surface p-3" data-auth-user="" hidden=""><div class="flex items-center gap-3"><span class="auth-avatar" data-auth-initial="">U</span><div class="min-w-0"><p class="truncate text-sm font-semibold" data-auth-name="">User</p><p class="muted truncate text-xs" data-auth-email=""></p></div></div><a class="cc-profile-link" href="profile.html">View profile &amp; bookings</a><button class="auth-logout-btn mt-3" data-auth-logout="" type="button">Log out</button></div></div>
+</header><main>
+<section class="border-b line grain">
+<div class="mx-auto max-w-7xl px-5 py-16 md:py-20">
+<span class="chip">Services</span>
+<h1 class="display mt-4 text-4xl font-bold md:text-5xl">Repair services</h1>
+<p class="muted mt-3 max-w-2xl">Every service below is completed in our own workshop by a named cobbler.</p>
+<nav aria-label="Breadcrumb" class="mt-5 text-sm muted"><a class="hover:brand" href="index.html">Home</a> <span>/</span> <span class="brand">Services</span></nav>
+</div></section>
+<section class="cc-ask-cobbler-section border-b line" id="ask-a-cobbler">
+<div class="mx-auto max-w-7xl px-5 py-16 md:py-20">
+<div class="cc-ask-cobbler-shell">
+<div class="cc-ask-cobbler-copy">
+<span class="chip">Start here · Photo assessment</span>
+<h2 class="display mt-4 text-3xl font-bold md:text-4xl">Ask a Cobbler</h2>
+<p class="muted mt-3 max-w-xl">Not sure which repair to book? Start with clear photos of the footwear and a short note. Review the recommendation, then choose the matching service below when you are ready to book.</p>
+<div class="cc-ask-points mt-6">
+<div><span>01</span><p><strong>Upload photos</strong><small>Use clear front, side and damaged-area shots.</small></p></div>
+<div><span>02</span><p><strong>Add the problem</strong><small>Tell us what feels loose, worn or damaged.</small></p></div>
+<div><span>03</span><p><strong>Get guidance</strong><small>Receive a recommended repair and starting estimate.</small></p></div>
+</div>
+</div>
+<div class="cc-ask-upload-card" data-ask-cobbler="">
+<input accept="image/jpeg,image/png,image/webp" class="sr-only" data-ask-photo-input="" id="ask-cobbler-photos" multiple="" type="file"/>
+<button aria-controls="ask-cobbler-photos" class="cc-photo-upload-trigger" data-ask-photo-trigger="" type="button">
+<span aria-hidden="true" class="cc-upload-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M12 16V4"></path><path d="m7 9 5-5 5 5"></path><path d="M5 14v5h14v-5"></path></svg></span>
+<span><strong>Upload repair photos</strong><small>JPG, PNG or WebP · up to 3 photos · 8 MB each</small></span>
+<span class="cc-upload-action">Choose photos</span>
+</button>
+<div class="cc-photo-preview-grid" data-ask-preview="" hidden=""></div>
+<form class="cc-ask-form" data-ask-form="" hidden="">
+<div class="grid gap-4 sm:grid-cols-2">
+<div><label class="mb-1.5 block text-sm font-medium" for="ask-name">Your name</label><input autocomplete="name" class="input" id="ask-name" minlength="2" name="name" required=""/></div>
+<div><label class="mb-1.5 block text-sm font-medium" for="ask-email">Email</label><input autocomplete="email" class="input" id="ask-email" name="email" required="" type="email"/></div>
+<div class="sm:col-span-2"><label class="mb-1.5 block text-sm font-medium" for="ask-service">What do you think it needs?</label><select class="input" id="ask-service" name="service"><option value="not-sure">Not sure — recommend a service</option><option value="sole-replacement">Sole Replacement</option><option value="heel-repair">Heel Repair</option><option value="leather-polishing">Leather Polishing</option><option value="stitching-seams">Stitching &amp; Seams</option><option value="leather-restoration">Leather Restoration</option><option value="wax-creaming">Wax &amp; Creaming</option><option value="leather-care">Leather Care</option><option value="orthopaedic-work">Orthopaedic Work</option></select></div>
+<div class="sm:col-span-2"><label class="mb-1.5 block text-sm font-medium" for="ask-message">What should we look at?</label><textarea class="input" id="ask-message" minlength="8" name="message" placeholder="Example: the sole is separating near the toe and the leather is scuffed on the outer side." required="" rows="4"></textarea></div>
+</div>
+<div class="mt-5 flex flex-wrap items-center gap-3"><button class="btn btn-primary" type="submit">Send for assessment</button><button class="btn btn-ghost" data-ask-change-photos="" type="button">Change photos</button><span class="muted text-xs">Photos stay in your browser in this static template demo.</span></div>
+<div aria-live="polite" class="cc-ask-status" data-ask-status="" role="status"></div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class="mx-auto max-w-7xl px-5 py-16" id="services-list">
+<div class="mb-8 max-w-2xl"><span class="chip">Step 2 · Choose your service</span><h2 class="display mt-4 text-3xl font-bold md:text-4xl">Ready to book?</h2><p class="muted mt-3">Use the assessment above when you are unsure, then choose the repair that matches your pair and continue to booking.</p></div>
+<div class="mb-8 flex flex-wrap items-center gap-2"><button class="btn btn-primary is-active" data-sfilter="all">All</button><button class="btn btn-ghost" data-sfilter="resole">Soles &amp; Heels</button><button class="btn btn-ghost" data-sfilter="repair">Repairs</button><button class="btn btn-ghost" data-sfilter="care">Care &amp; Fit</button></div>
+<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"><article class="card reveal p-6 cc-service-clickable" data-cat="resole" data-service="" data-service-slug="sole-replacement"><img alt="Sole restoration service" class="cc-card-photo" decoding="async" loading="lazy" src="assets/images/sole.png"/>
+<div class="grid h-12 w-12 place-items-center rounded-xl text-2xl" style="background:color-mix(in oklab,var(--cc-brand) 15%,transparent)"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M3 17c0-3 1-5 1-8V5h5l1 3 4 2c3 1 6 2 6 5v2H3z"></path><path d="M3 17h18"></path></svg></div>
+<h3 class="mt-4 text-lg font-bold">Sole Replacement</h3>
+<p class="muted mt-2 text-sm">Full and half soles in Vibram, leather or rubber — stitched, not glued.</p>
+<div class="mt-4 flex items-center justify-between border-t line pt-4 text-sm">
+<span class="font-bold brand">From $58</span><span class="muted"> 3–5 days</span>
+</div>
+<a class="link-underline mt-4 inline-block text-sm font-semibold" href="service-details.html?service=sole-replacement">View details →</a>
+<button aria-label="Book Sole Replacement" class="btn btn-primary cc-book-service-btn" data-book-service="sole-replacement" type="button">Book service</button></article><article class="card reveal p-6 cc-service-clickable" data-cat="resole" data-service="" data-service-slug="heel-repair"><img alt="Heel repair service" class="cc-card-photo" decoding="async" loading="lazy" src="assets/images/heel.png"/>
+<div class="grid h-12 w-12 place-items-center rounded-xl text-2xl" style="background:color-mix(in oklab,var(--cc-brand) 15%,transparent)"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M7 4v7l-2 4v5h6v-4l3-3V4z"></path><path d="M11 20h8v-3h-8"></path></svg></div>
+<h3 class="mt-4 text-lg font-bold">Heel Repair</h3>
+<p class="muted mt-2 text-sm">Heel tips, block rebuilds and stiletto pins replaced in-house.</p>
+<div class="mt-4 flex items-center justify-between border-t line pt-4 text-sm">
+<span class="font-bold brand">From $24</span><span class="muted"> 24 hours</span>
+</div>
+<a class="link-underline mt-4 inline-block text-sm font-semibold" href="service-details.html?service=heel-repair">View details →</a>
+<button aria-label="Book Heel Repair" class="btn btn-primary cc-book-service-btn" data-book-service="heel-repair" type="button">Book service</button></article><article class="card reveal p-6 cc-service-clickable" data-cat="care" data-service="" data-service-slug="leather-polishing"><img alt="Premium leather polishing service" class="cc-card-photo" decoding="async" loading="lazy" src="assets/images/polish.png"/>
+<div class="grid h-12 w-12 place-items-center rounded-xl text-2xl" style="background:color-mix(in oklab,var(--cc-brand) 15%,transparent)"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9.5 13.8 11.3 12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"></path><path d="M18 16l.8 2.2L21 19l-2.2.8L18 22l-.8-2.2L15 19l2.2-.8z"></path></svg></div>
+<h3 class="mt-4 text-lg font-bold">Leather Polishing</h3>
+<p class="muted mt-2 text-sm">Deep clean, recolour and mirror-shine finish by hand.</p>
+<div class="mt-4 flex items-center justify-between border-t line pt-4 text-sm">
+<span class="font-bold brand">From $19</span><span class="muted"> Same day</span>
+</div>
+<a class="link-underline mt-4 inline-block text-sm font-semibold" href="service-details.html?service=leather-polishing">View details →</a>
+<button aria-label="Book Leather Polishing" class="btn btn-primary cc-book-service-btn" data-book-service="leather-polishing" type="button">Book service</button></article><article class="card reveal p-6 cc-service-clickable" data-cat="repair" data-service="" data-service-slug="stitching-seams"><img alt="Hand stitching and shoe repair" class="cc-card-photo" decoding="async" loading="lazy" src="assets/images/blog2.jpeg"/>
+<div class="grid h-12 w-12 place-items-center rounded-xl text-2xl" style="background:color-mix(in oklab,var(--cc-brand) 15%,transparent)"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M4 6h16"></path><path d="M4 12h16"></path><path d="M4 18h16"></path><path d="M8 4v4M16 10v4M10 16v4"></path></svg></div>
+<h3 class="mt-4 text-lg font-bold">Stitching &amp; Seams</h3>
+<p class="muted mt-2 text-sm">Blown seams, split uppers and welt re-stitching on our vintage Landis.</p>
+<div class="mt-4 flex items-center justify-between border-t line pt-4 text-sm">
+<span class="font-bold brand">From $32</span><span class="muted"> 2–4 days</span>
+</div>
+<a class="link-underline mt-4 inline-block text-sm font-semibold" href="service-details.html?service=stitching-seams">View details →</a>
+<button aria-label="Book Stitching &amp; Seams" class="btn btn-primary cc-book-service-btn" data-book-service="stitching-seams" type="button">Book service</button></article><article class="card reveal p-6 cc-service-clickable" data-cat="care" data-service="" data-service-slug="leather-restoration"><img alt="Leather shoe restoration and conditioning service" class="cc-card-photo" decoding="async" loading="lazy" src="assets/images/leather.jpeg"/>
+<div class="grid h-12 w-12 place-items-center rounded-xl text-2xl" style="background:color-mix(in oklab,var(--cc-brand) 15%,transparent)"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><rect height="10" rx="2" width="14" x="5" y="10"></rect><path d="M8 10V7a4 4 0 018 0v3"></path></svg></div>
+<h3 class="mt-4 text-lg font-bold">Leather Restoration</h3>
+<p class="muted mt-2 text-sm">Revive faded, scratched and dry leather with deep conditioning, colour correction and protective finishing.</p>
+<div class="mt-4 flex items-center justify-between border-t line pt-4 text-sm">
+<span class="font-bold brand">From $48</span><span class="muted">2–3 days</span>
+</div>
+<a class="link-underline mt-4 inline-block text-sm font-semibold" href="service-details.html?service=leather-restoration">View details →</a>
+<button aria-label="Book Leather Restoration" class="btn btn-primary cc-book-service-btn" data-book-service="leather-restoration" type="button">Book service</button></article><article class="card reveal p-6 cc-service-clickable" data-cat="care" data-service="" data-service-slug="wax-creaming"><img alt="Premium shoe wax and cream care service" class="cc-card-photo" decoding="async" loading="lazy" src="assets/images/wax.jpeg"/>
+<div class="grid h-12 w-12 place-items-center rounded-xl text-2xl" style="background:color-mix(in oklab,var(--cc-brand) 15%,transparent)"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M3 12h18"></path><path d="M6 9v6M18 9v6"></path></svg></div>
+<h3 class="mt-4 text-lg font-bold">Wax &amp; Creaming</h3>
+<p class="muted mt-2 text-sm">Layered cream conditioning and wax polishing for richer colour, nourishment, shine and weather protection.</p>
+<div class="mt-4 flex items-center justify-between border-t line pt-4 text-sm">
+<span class="font-bold brand">From $24</span><span class="muted">Same day</span>
+</div>
+<a class="link-underline mt-4 inline-block text-sm font-semibold" href="service-details.html?service=wax-creaming">View details →</a>
+<button aria-label="Book Wax &amp; Creaming" class="btn btn-primary cc-book-service-btn" data-book-service="wax-creaming" type="button">Book service</button></article><article class="card reveal p-6 cc-service-clickable" data-cat="care" data-service="" data-service-slug="leather-care"><img alt="Professional leather care products and treatment" class="cc-card-photo" decoding="async" loading="lazy" src="assets/images/blog1.png"/>
+<div class="grid h-12 w-12 place-items-center rounded-xl text-2xl" style="background:color-mix(in oklab,var(--cc-brand) 15%,transparent)"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="7"></rect><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"></path></svg></div>
+<h3 class="mt-4 text-lg font-bold">Leather Care</h3>
+<p class="muted mt-2 text-sm">Professional cleaning, conditioning and protection that keeps leather supple, balanced and ready for regular wear.</p>
+<div class="mt-4 flex items-center justify-between border-t line pt-4 text-sm">
+<span class="font-bold brand">From $29</span><span class="muted">24 hours</span>
+</div>
+<a class="link-underline mt-4 inline-block text-sm font-semibold" href="service-details.html?service=leather-care">View details →</a>
+<button aria-label="Book Leather Care" class="btn btn-primary cc-book-service-btn" data-book-service="leather-care" type="button">Book service</button></article><article class="card reveal p-6 cc-service-clickable" data-cat="care" data-service="" data-service-slug="orthopaedic-work"><img alt="Replacement sole materials for custom fitting" class="cc-card-photo" decoding="async" loading="lazy" src="assets/images/sole_replacement.jpeg"/>
+<div class="grid h-12 w-12 place-items-center rounded-xl text-2xl" style="background:color-mix(in oklab,var(--cc-brand) 15%,transparent)"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M12 3a6 6 0 00-6 6c0 4 3 5 3 9h6c0-4 3-5 3-9a6 6 0 00-6-6z"></path></svg></div>
+<h3 class="mt-4 text-lg font-bold">Orthopaedic Work</h3>
+<p class="muted mt-2 text-sm">Lifts, wedges and custom insoles built to prescription.</p>
+<div class="mt-4 flex items-center justify-between border-t line pt-4 text-sm">
+<span class="font-bold brand">From $95</span><span class="muted"> 5–7 days</span>
+</div>
+<a class="link-underline mt-4 inline-block text-sm font-semibold" href="service-details.html?service=orthopaedic-work">View details →</a>
+<button aria-label="Book Orthopaedic Work" class="btn btn-primary cc-book-service-btn" data-book-service="orthopaedic-work" type="button">Book service</button></article></div>
+</section>
+<section class="border-y line grain"><div class="mx-auto max-w-4xl px-5 py-20">
+<span class="chip">Questions</span><h2 class="display mt-3 text-3xl font-bold">Before you book</h2>
+<div class="mt-8"><div class="space-y-3"><div class="card p-0" data-accordion="">
+<button class="flex w-full items-center justify-between gap-4 p-5 text-start font-semibold">How long does a resole take?<span class="brand text-xl">+</span></button>
+<div class="hidden px-5 pb-5" data-accordion-body=""><p class="muted text-sm">Most full resoles are finished in 3–5 working days. Express 24-hour service is available for an additional $25.</p></div></div><div class="card p-0" data-accordion="">
+<button class="flex w-full items-center justify-between gap-4 p-5 text-start font-semibold">Do you repair sneakers and trainers?<span class="brand text-xl">+</span></button>
+<div class="hidden px-5 pb-5" data-accordion-body=""><p class="muted text-sm">Yes — we handle midsole restoration, sole swaps, and repainting for most premium sneaker brands.</p></div></div><div class="card p-0" data-accordion="">
+<button class="flex w-full items-center justify-between gap-4 p-5 text-start font-semibold">Can I mail my shoes to you?<span class="brand text-xl">+</span></button>
+<div class="hidden px-5 pb-5" data-accordion-body=""><p class="muted text-sm">Absolutely. Print a prepaid label from the booking form and we ship them back tracked and insured.</p></div></div><div class="card p-0" data-accordion="">
+<button class="flex w-full items-center justify-between gap-4 p-5 text-start font-semibold">What is covered by the guarantee?<span class="brand text-xl">+</span></button>
+<div class="hidden px-5 pb-5" data-accordion-body=""><p class="muted text-sm">All stitching and adhesive work is guaranteed for 90 days, extended to 12 months on Heritage restorations.</p></div></div><div class="card p-0" data-accordion="">
+<button class="flex w-full items-center justify-between gap-4 p-5 text-start font-semibold">Do you offer pickup and delivery?<span class="brand text-xl">+</span></button>
+<div class="hidden px-5 pb-5" data-accordion-body=""><p class="muted text-sm">We collect and return within 15 miles of the workshop for a flat $12 per order.</p></div></div></div></div></div></section>
+<section class="mx-auto max-w-7xl px-5 py-16">
+<div class="stitch grain p-10 text-center md:p-14">
+<h2 class="display text-3xl font-bold md:text-4xl">Bring in a pair. Leave with them better than new.</h2>
+<p class="muted mx-auto mt-3 max-w-xl">Free assessment, honest quote, no work starts without your approval.</p>
+<div class="mt-7 flex flex-wrap justify-center gap-3">
+<a class="btn btn-primary" href="services.html#services-list">Book a repair</a>
+<a class="btn btn-ghost" href="pricing.html">See price list</a>
+</div></div></section>
+</main><footer class="mt-24 border-t line">
+<div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-2 lg:grid-cols-5">
+<div class="lg:col-span-2">
+<a class="flex items-center gap-2.5" href="index.html">
+<span class="grid h-10 w-10 place-items-center rounded-xl bg-brand text-white"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M7 4v7l-2 4v5h6v-4l3-3V4z"></path><path d="M11 20h8v-3h-8"></path></svg></span>
+<span class="display text-xl font-bold">CobblerCraft</span>
+</a>
+<p class="muted mt-4 max-w-sm text-sm">Master cobblers restoring soles, heels and leather since 1978. Drop off, mail in, or book a pickup — every repair is hand-finished and guaranteed.</p>
+<form class="mt-5 flex gap-2" data-demo="">
+<label class="sr-only" for="nl">Email</label>
+<input class="input" id="nl" placeholder="Email for repair tips" required="" type="email"/>
+<button class="btn btn-primary">Join</button>
+<p class="hidden" data-demo-note=""></p>
+</form>
+</div>
+<div><h4 class="mb-3 text-sm font-bold uppercase tracking-wider">Company</h4><ul class="space-y-2 text-sm"><li><a class="muted hover:brand" href="index.html">Home 1</a></li><li><a class="muted hover:brand" href="home-2.html">Home 2</a></li><li><a class="muted hover:brand" href="about.html">About</a></li><li><a class="muted hover:brand" href="services.html">Services</a></li></ul></div><div><h4 class="mb-3 text-sm font-bold uppercase tracking-wider">Pages</h4><ul class="space-y-2 text-sm"><li><a class="muted hover:brand" href="service-details.html">Service Details</a></li><li><a class="muted hover:brand" href="pricing.html">Pricing</a></li><li><a class="muted hover:brand" href="blog.html">Blog</a></li><li><a class="muted hover:brand" href="contact.html">Contact</a></li></ul></div><div><h4 class="mb-3 text-sm font-bold uppercase tracking-wider">Template Pages</h4><ul class="space-y-2 text-sm"><li><a class="muted hover:brand" href="blog-details.html">Blog Details</a></li><li><a class="muted hover:brand" href="login.html">Sign In</a></li><li><a class="muted hover:brand" href="register.html">Create Account</a></li><li><a class="muted hover:brand" href="404.html">404 Page</a></li><li><a class="muted hover:brand" href="coming-soon.html">Coming Soon</a></li><li><a class="muted hover:brand" href="maintenance.html">Maintenance</a></li></ul></div>
+</div>
+<div class="border-t line">
+<div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-5 text-sm md:flex-row">
+<p class="muted">© 2026 CobblerCraft HTML Template. All rights reserved.</p>
+<p class="muted">Light / Dark / RTL ready · Built with TailwindCSS</p>
+</div>
+</div>
+</footer>
+<script src="assets/js/ask-cobbler.js"></script><script src="assets/js/service-booking.js"></script><script src="assets/js/service-navigation.js"></script><script src="assets/js/auth.js"></script></body></html>
