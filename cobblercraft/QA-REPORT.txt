@@ -1,0 +1,38 @@
+CobblerCraft — ThemeForest Professional QA Report
+==================================================
+
+Build: Professional high-level refinement
+
+Requirement verification
+------------------------
+1. Light Mode: brighter white-tinted background, cleaner surfaces, improved text/border contrast — PASS
+2. Header: Sign In retained as primary bordered CTA — PASS
+3. Home 1: clear Book Service CTA in What We Do / Services section — PASS
+4. Home 2: customer-focused shoe-repair content + redesigned premium hero — PASS
+5. Home 1 What We Do: rates, turnaround and links normalized to equal card baselines — PASS
+6. About: Team and Testimonials section headings centered — PASS
+7. Public heroes: heading, subheading and CTA alignment centered — PASS
+8. Services: extra service container added; total service cards = 10 — PASS
+9. Blog: card title/subtext/link baselines normalized — PASS
+10. Footer: excess gap above footer reduced site-wide — PASS
+11. Authentication: Back to Home link removed from login/register — PASS
+12. Responsive header:
+    - 360px compact controls + non-cropping hamburger rules — PASS
+    - 1024px compact menu + Sign In/Create Account kept visible — PASS
+
+Professional production improvements
+------------------------------------
+- Added assets/css/themeforest-pro.css as a dedicated refinement layer.
+- Replaced Tailwind CDN runtime dependency with compiled local assets/css/tailwind-local.css.
+- Added consistent card shadows, radius, hover elevation, spacing and CTA hierarchy.
+- Improved responsive density and horizontal overflow safety.
+- Updated Home 2 page title/content from generic SaaS/Agency language to CobblerCraft customer experience language.
+
+Automated QA
+------------
+HTML pages served locally: 16/16 HTTP 200
+Broken local references: 0
+Duplicate IDs: 0
+JavaScript syntax files checked: 8/8 PASS
+Services cards: 10
+Tailwind CDN references remaining: 0
