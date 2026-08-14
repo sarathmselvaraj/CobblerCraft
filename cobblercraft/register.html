@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Register | CobblerCraft — Shoe Repair &amp; Cobbler Template</title>
+<link href="assets/images/favicon.png" rel="icon" sizes="128x128" type="image/png"/>
+<link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<meta content="Create a CobblerCraft account to book repairs, approve quotes and follow job progress." name="description"/>
+<link href="./register.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Register | CobblerCraft" property="og:title"/>
+<meta content="Create a CobblerCraft account to book repairs, approve quotes and follow job progress." property="og:description"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="assets/css/tailwind-local.css" rel="stylesheet"/><link href="assets/css/style.css" rel="stylesheet"/><link href="assets/css/themeforest-pro-v2.css" rel="stylesheet"/>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/auth.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"CobblerCraft","description":"Create a CobblerCraft account to book repairs, approve quotes and follow job progress.","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"14 Tannery Lane","addressLocality":"Brooklyn","addressRegion":"NY","postalCode":"11222"},"telephone":"+1-555-0142"}
+</script>
+</link></link></head>
+<body class="antialiased" data-page="auth">
+<main class="grid min-h-screen lg:grid-cols-2">
+<div class="hidden grain flex-col justify-between p-12 lg:flex" style="background:color-mix(in oklab,var(--cc-brand) 10%,var(--cc-bg))">
+<a class="flex items-center gap-2.5" href="index.html">
+<span class="grid h-10 w-10 place-items-center rounded-xl bg-brand text-white"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M7 4v7l-2 4v5h6v-4l3-3V4z"></path><path d="M11 20h8v-3h-8"></path></svg></span>
+<span class="display text-xl font-bold">CobblerCraft</span>
+</a>
+<div><h2 class="display text-4xl font-bold leading-tight">Every pair has a ticket. Every ticket has a cobbler.</h2>
+<p class="muted mt-4 max-w-md">Create an account to save your profile and access a personalized signed-in experience across the website.</p></div>
+<p class="muted text-sm">© 2026 CobblerCraft Template</p>
+</div>
+<div class="flex items-center justify-center p-6">
+<div class="w-full max-w-md">
+<div class="mb-6 flex items-center justify-between lg:hidden"><a class="flex items-center gap-2.5" href="index.html">
+<span class="grid h-10 w-10 place-items-center rounded-xl bg-brand text-white"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M7 4v7l-2 4v5h6v-4l3-3V4z"></path><path d="M11 20h8v-3h-8"></path></svg></span>
+<span class="display text-xl font-bold">CobblerCraft</span>
+</a></div>
+<div class="mb-4 flex justify-end gap-2"><button aria-label="Toggle dark mode" class="btn btn-ghost !px-3 !py-2" onclick="ccToggleTheme()"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 019.5 4a8.5 8.5 0 1010.5 10.5z"></path></svg></button>
+<button aria-label="Toggle RTL" class="btn btn-ghost !px-3 !py-2 text-xs font-bold" onclick="ccToggleDir()">RTL</button></div>
+<h1 class="display text-3xl font-bold">Create your account</h1><p class="muted mt-2 text-sm">Create your customer profile and stay signed in across the website.</p>
+<form class="mt-8 space-y-4" data-auth-form="" id="register-form" novalidate=""><div class="grid gap-4 sm:grid-cols-2">
+<div data-field=""><label class="mb-1.5 block text-sm font-medium" for="r-f">First name</label><input autocomplete="given-name" class="input" id="r-f" required=""/><p class="auth-field-error" data-field-error="" hidden=""></p></div>
+<div data-field=""><label class="mb-1.5 block text-sm font-medium" for="r-l">Last name</label><input autocomplete="family-name" class="input" id="r-l" required=""/><p class="auth-field-error" data-field-error="" hidden=""></p></div></div>
+<div data-field=""><label class="mb-1.5 block text-sm font-medium" for="r-e">Email</label><input autocomplete="email" class="input" id="r-e" placeholder="you@example.com" required="" type="email"/><p class="auth-field-error" data-field-error="" hidden=""></p></div><div data-field=""><label class="mb-1.5 block text-sm font-medium" for="r-phone">Phone</label><input autocomplete="tel" class="input" id="r-phone" placeholder="+1 555 014 2288" type="tel"/><p class="auth-field-error" data-field-error="" hidden=""></p></div>
+<div data-field=""><label class="mb-1.5 block text-sm font-medium" for="r-p">Password</label><div class="auth-password-wrap"><input autocomplete="new-password" class="input" id="r-p" required="" type="password"/><button class="auth-password-toggle" data-password-toggle="r-p" type="button">Show</button></div><p class="auth-field-error" data-field-error="" hidden=""></p><p class="muted mt-1.5 text-xs">Use 8+ characters with uppercase, lowercase and a number.</p></div>
+<div data-field=""><label class="mb-1.5 block text-sm font-medium" for="r-c">Confirm password</label><div class="auth-password-wrap"><input autocomplete="new-password" class="input" id="r-c" required="" type="password"/><button class="auth-password-toggle" data-password-toggle="r-c" type="button">Show</button></div><p class="auth-field-error" data-field-error="" hidden=""></p></div>
+<label class="flex items-start gap-3 text-sm"><input class="mt-1" id="r-terms" required="" type="checkbox"/><span class="muted">I agree to the Terms of Service and Privacy Policy.</span></label>
+<p aria-live="polite" class="auth-status" hidden="" id="register-status"></p>
+<button class="btn btn-primary w-full" type="submit">Create account</button>
+<p class="muted text-center text-xs">This static demo stores the account in your browser so registration and login can be tested without a backend.</p></form>
+<p class="muted mt-6 text-center text-sm">Already registered? <a class="link-underline brand font-semibold" href="login.html">Sign in</a></p>
+
+</div>
+</div></main></body></html>
