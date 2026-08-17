@@ -1,0 +1,68 @@
+CobblerCraft — Final Sticky Navbar + Direct Booking QA
+Generated: 2026-08-15
+
+IMPLEMENTED
+- Sticky navigation enforced on all public site headers.
+- RTL control visible in desktop, tablet (1024px), and mobile (360px) navbar layouts.
+- Sign Up CTA visible responsively; Sign In remains the primary bordered CTA where space permits.
+- Mobile navbar spacing rebuilt to avoid hamburger/button cropping.
+- Direct Book Service modal works without requiring authentication.
+- Generic booking CTAs open the booking form directly.
+- Service-card booking buttons preselect the chosen service.
+- Booking form includes service, name, email, phone, preferred date, handover/pickup, address, notes and consent.
+- Successful booking generates a CC reference and saves the request to cc-service-bookings-v1 in localStorage.
+- Light and dark modes both render the site background artwork with theme-specific overlays for contrast.
+- Hero heading and hero subheading alignment is centered across public content pages.
+- RTL direction toggle persists through the existing localStorage preference mechanism.
+
+CHROMIUM RENDER / INTERACTION QA
+- 360px: horizontal overflow = 0; RTL visible; Sign Up visible; hamburger visible and fully inside viewport.
+- 1024px: RTL, Sign In, Sign Up and hamburger are visible; no right-side cropping.
+- 1440px: full desktop navigation; RTL, Sign In and Sign Up visible; mobile hamburger hidden.
+- Sticky scroll test at 1024px: header remains at top = 0px after page scroll.
+- RTL toggle at 360px: document direction changes to rtl; horizontal overflow remains 0.
+- Light mode background: site background image present; effective ::before opacity = 0.24.
+- Dark mode background: site background image present; effective ::before opacity = 0.32.
+- Direct guest booking test: modal opened, Heel Repair selected, valid form submitted, success state shown, 1 booking stored.
+- Specific service test: Sneaker Deep Cleaning button opens modal with sneaker-cleaning preselected.
+- Hero alignment verified as center for index, Home 2, About, Services, Pricing, Blog, Contact, Service Details, Profile and 404 at 1024px.
+
+STATIC QA
+- HTML pages checked: 16
+- Broken local references: 0
+- Duplicate HTML IDs: 0
+- JavaScript files checked with node --check: 8
+- JavaScript syntax failures: 0
+- Final CSS loaded on all 16 HTML pages.
+- Booking JS loaded on all 16 HTML pages.
+
+NOTE
+This is a static HTML demo. Booking persistence is implemented client-side with localStorage; connecting it to a real production database/API would require a backend endpoint.
+
+=== BOOKING REFRESH + LIGHT BACKGROUND UPDATE (15 Aug 2026) ===
+- Booking submit now stores the booking and opens a dedicated professional "Booking updated" popup.
+- Popup displays the booking reference and confirms the requested service/date.
+- Booking form resets immediately after a successful submit so a fresh new form is ready.
+- Reset verified: service/name/email/phone/date cleared, consent unchecked, Store Handover restored, submit button restored to "Book Service".
+- Light Mode background artwork visibility increased and verified in Chromium (body artwork opacity 0.50 with readability overlay).
+- Dark Mode background remains enabled and verified.
+- Responsive header regression check: 360 / 1024 / 1440 widths have no positive horizontal overflow; RTL and Sign Up remain visible; hamburger behavior preserved.
+- Booking persistence test: PASS (localStorage record saved before form reset).
+- JS syntax: PASS.
+- Static local references: PASS (0 broken refs).
+
+LIGHT MODE BACKGROUND FINAL FIX
+- Light mode now paints assets/images/site-bg-purple.jpg directly on the body.
+- The same purple/white artwork is visibly rendered in Light Mode and Dark Mode.
+- Light mode keeps a translucent white readability overlay while preserving the artwork.
+- Chromium screenshot verification: PASS.
+- 360px responsive overflow: PASS (0 horizontal overflow).
+- Booking reset/update popup regression: PASS.
+
+MOBILE TITLE + DARK FOOTER FINAL PASS
+- CobblerCraft site title forced visible at <=420px and <=360px.
+- Chromium layout metric at 360px: document scrollWidth = 360px; brand/actions do not overlap.
+- 390px and 1024px layout metric: no header overlap/horizontal overflow.
+- Dark footer uses a deeper #160e17 -> #0d090f gradient, distinct top border, and separation shadow.
+- Global CSS applies these fixes to all pages that use the public header/footer.
+- Final static integrity regression: local references, duplicate IDs, JS syntax rechecked.
